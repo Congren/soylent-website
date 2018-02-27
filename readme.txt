@@ -1,0 +1,1 @@
+The homepage is one big scrollable page so I only have one index.html

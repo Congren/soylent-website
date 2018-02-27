@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://dg6qn11ynnp6a.cloudfront.net/wp-content/uploads/2015/08/25155019/RVpxOhPr1.png">
+    <title>Soylent</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+    $(document).scroll(function () {
+        var scroll_top = $(document).scrollTop();
+        var sectionOne = $('#why').position().top;
+        var sectionTwo = $('#products').position().top;
+        var sectionThree = $('#about').position().top;
+        var sectionFour = $('#contact').position().top;
+        if (scroll_top < sectionTwo-2) {
+            $('a[href="#products"]').removeClass('active');
+            $('a[href="#about"]').removeClass('active');
+            $('a[href="#contact"]').removeClass('active');
+            $('a[href="#why"]').addClass('active');
+        }
+        if (scroll_top >= sectionTwo-2 && scroll_top < sectionThree-2) {
+            $('a[href="#why"]').removeClass('active');
+            $('a[href="#about"]').removeClass('active');
+            $('a[href="#contact"]').removeClass('active');
+            $('a[href="#products"]').addClass('active');
+        }
+        if (scroll_top > sectionThree-2 && scroll_top < sectionFour-2) {
+            $('a[href="#why"]').removeClass('active');
+            $('a[href="#products"]').removeClass('active');
+            $('a[href="#contact"]').removeClass('active');
+            $('a[href="#about"]').addClass('active');
+        }
+        if (scroll_top > sectionFour-2) {
+            $('a[href="#why"]').removeClass('active');
+            $('a[href="#about"]').removeClass('active');
+            $('a[href="#products"]').removeClass('active');
+            $('a[href="#contact"]').addClass('active');
+        }
+        });      
+    $('#nav-bar').hide();
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 750){
+            $('#nav-bar').addClass("unhide");
+        }
+        else {
+            $('#nav-bar').removeClass("unhide");
+        }
+    });
+        
+    </script>
+</head>
+
+<body>
+    <div id="nav-bar">
+            <li>
+                <a href="#why">Why Soylent?</a>
+            </li>
+            <li>
+                <a href="#products">Products</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#contact">Contact Us</a>
+            </li>
+    </div>
+    <img src="images/soylent.jpg" alt="soylent" id="title-background">
+    <div id="title">
+        <h1>Soylent<br></h1>
+        <h2>Eat Less <br> Live More</h2>
+    </div>
+    <div id="content">
+            <div id="why">
+                <h3>Why Soylent?</h3>
+                <div class="center">
+                    <img src="images/why.jpg" id = "why-1" alt="why soylent?">
+                    <img src="images/why2.jpg" id = "why-2" alt="why soylent?">
+                </div>
+                    <p>If you’ve ever skipped breakfast after rolling out of bed too late…if you’ve ever missed a lunch because of a busy schedule…if you’ve ever had a guilty conscience over a midnight microwave burrito… Soylent is made for you.</p>
+                    <p> Protein, carbohydrates, lipids, and micronutrients: each Soylent product contains a complete blend of everything the body needs to thrive. It turns a full meal into a one-step process. It makes things a lot less complicated. And when you’re busy, it takes eating off your plate.</p>
+                    <p>Soylent is committed to providing positive nutrition in the United States and around the world. In 2016, we donated over one million meals to those in need. We continue to donate to partner organizations like the World Food Program's Innovation Accelerator and food banks across the country. And we work with physicians as we develop new products to increase access to complete nutrition.</p>
+                    <p>Food wastes more than just our time. Because all Soylent drinks are made from plants, they require less water and produce less CO2 than livestock. Our drinks also reduce food waste with a year-long shelf life and don’t require refrigeration, unlike fruits and vegetables that get tossed after a few days or weeks in the fridge.</p>
+            </div> 
+            <div id = "products">
+                <h3>Our Products</h3>
+                <div id="soy-products">
+                    <div class="row">
+                        <div class="column">
+                            <img src="images/soylent-1.jpg" alt="soylent original" id="soy1">
+                            <p>Soylent Original provides a complete meal at maximum value. Stop skipping meals, pay a fraction of the cost of eating out, and spend a fraction of the time of cooking a meal. One serving delivers 200 completely nutritious vegan calories for only $1.34 each. Add to smoothies or protein drinks to get essential vitamins</p>
+                        </div>
+                        <div class="column">
+                            <img src="images/soylent-2.jpg" alt="soylent coffee" id="soy2">
+                            <p>Soylent Cafe Coffiest is a nutritionally complete, ready-to-drink breakfast in a bottle. Each 400 calorie bottle of Cafe Coffiest has a delicious mocha flavor plus the caffeine of a strong cup of coffee. Cafe Coffiest also contains l-theanine, an amino acid that counteracts the jittery effects of caffeine. A perfect meal replacement for your normal morning coffee</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img src="images/soylent-3.jpg" alt="soylent chai" id="soy3">
+                            <p>Soylent Cafe Chai is very nutritionally complete, ready-to-drink breakfast that's in a bottle. Each 400 calorie bottle of Coffiest is a complete meal and contains the caffeine of a strong cup of black tea. Cafe Chai also contains l-theanine, an amino acid that counteracts the jittery effects of caffeine.  </p>
+                        </div>
+                        <div class="column">                    
+                            <img src="images/soylent-4.jpg" alt="soylent nectar" id="soy4">
+                            <p>Soylent Nectar is a flavor pretty much exclusive to South Louisiana. Though most would figure something with the name nectar to taste like a tropical fruit, nectar syrup is a neon-pink concoction that is overflowing with almond and vanilla flavoring.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img src="images/soylent-5.jpg" alt="soylent cacao" id="soy5">
+                            <p>Soylent Cacao tastes like a weak hot chocolate or perhaps chocolate flavored almond milk. It doesn’t quite qualify as dessert, but it is a lot closer than original Soylent 2.0. I’ve seen a few commenters online mention that they can’t handle the taste of Soylent alone so they frequently mix it with chocolate power or Nesquick. If this is you, you’ll probably love (or at least like) Cacao.</p>
+                        </div>
+                        <div class="column">
+                            <img src="images/soylent-6.jpg" alt="soylent powder" id="soy6">
+                            <p>Soylent Powder is designed to provide complete nutrition with minimum effort. Just mix with water to create nutritionally complete meals that keep you satisfied for hours. Your first order of Soylent Powder Pouch includes a free pitcher and scoop.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id = "about">
+                <h3>About Soylent</h3>
+                <div id="mission">
+                <img src=images/about-1.jpg alt="about soylent" id="about-1">
+                <p>Soylent™ is a leading pioneer in food technology, producing good healthy, functional foods that are good for the body and the planet. In 2013, Founder and CEO Rob Rhinehart developed the first iteration in his kitchen after recognizing the need for a simpler, more efficient food source. Soylent uses science and technology to solve the challenges plaguing the current food system and work toward its mission of providing access to quality nutrition to people across the globe.</p>
+                </div>
+                <div id="vision">
+                <img src="images/about-2.jpg" alt="about soylent" id="about-2">
+                <p>The co-founders of Soylent met while working on a pair of startups under the same roof in Sunnyvale, CA. Living off a diet of frozen food and ramen, they grew frustrated with the experience. Now, we seek to use science, tech, and enterprise as tools to help make eating easier. We aim to create a portfolio of products that make eating an easier part of your day. We hope to expand access to quality nutrition through food system innovation.</p>
+                </div>
+            </div>
+            <div id = "contact">
+                <img src="images/contact.jpg" alt="contact us" id="contact-background">
+
+                <h3>Contact Us</h3>
+                <p><i>Let Us Know How We Can Help!</i></p>
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4666233214675!2d-79.94520684949316!3d40.442808079260885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f21f58679a9f%3A0x88716b461fc4daf    4!2sCarnegie+Mellon+University!5e0!3m2!1sen!2sus!4v1518052709293" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+                <p> Pittsburgh, US</p>
+                <p> Phone: 631-424-1444</p>
+                <p> Email: congrenw@andrew.cmu.edu</p>
+            </div>
+                <br>
+        <hr>
+        <footer id="footer">
+                    <small>&copy; Copyright 2018, Congren Wang</small>
+        </footer>
+        </div>
+        
+</body>
+
+
+    
+</html>
